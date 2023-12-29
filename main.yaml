@@ -1,0 +1,7 @@
+- name: Collect Host Facts
+  hosts: all
+  gather_facts: yes
+
+  tasks:
+    - name: Gather facts
+      ansible.builtin.setup:
